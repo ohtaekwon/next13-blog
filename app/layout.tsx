@@ -1,6 +1,7 @@
-import NavBar from "./(shared)/NavBar";
 import "./globals.css";
 import fonts from "@/app/fonts";
+import NavBar from "app/(shared)/NavBar";
+import Footer from "app/(shared)/Footer";
 
 export const metadata = {
   title: "Blog AI App",
@@ -17,6 +18,7 @@ export default function RootLayout({
       <body className={fonts.openSans.className}>
         <NavBar />
         {children}
+        <Footer />
       </body>
     </html>
   );
